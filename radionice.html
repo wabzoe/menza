@@ -36,10 +36,51 @@
         color: gray;
         display: inline-block;
     }
-
     .slika{
         width: 25px;
         margin-bottom: -5px;
+        cursor: pointer;
+    }
+    .filtergumb{
+        display: inline-block;
+        position: relative;
+    }
+    .filtergumb:hover .filter{
+        display: block;
+    }
+    .filter{
+        padding: 5px;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 2;
+        width: 200px;
+        background-color: #eeeeee;
+        border: black 1px solid;
+        border-radius: 10px;
+        top: 25px;
+        left: 0px;
+        display: none;
+    }
+    .filter p{
+        font-size: 17px;
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin: 0px;
+        padding: 0px;
+    }
+    .filter input,.filter select{
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .pretrazi{
+        background-color: white;
+        padding: 5px 10px;
+        font-size: 14px;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
     }
     .radionica{
         width: 30%;
@@ -87,7 +128,29 @@
     <h3>Popis radionica</h3>
     <div>
         <p class="potrazi">Potraži</p>
-        <a href="#"><img class="slika" src="images/filter.png" alt="filter"></a>
+        <div class="filtergumb"><img class="slika" src="images/filter.png" alt="filter">
+            <div class="filter">
+                <p>Filter</p>
+                <form action="" method="post">
+                    <label for="datum">Odaberite datum:</label>
+                    <input type="date" name="datum" id="datum">
+                    <br>
+                    <label for="vrijeme">Odaberite vrijeme:</label>
+                    <input type="time" name="vrijeme" id="vrijeme">
+                    <br>
+                    <label for="tags">Odaberite temu:</label>
+                    <br>
+                    <select name="tags" id="tags">
+                        <option value="IOT">IOT</option>
+                        <option value="Arduino">Arduio</option>
+                        <option value="Coding">Coding</option>
+                    </select>
+                    <br>
+                    <input type="submit" class="pretrazi" value="Pretraži">
+                </form>
+
+            </div>
+        </div>
     </div>
 
     <div class="content">
