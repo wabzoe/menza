@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ime radionice</title>
+</head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d9d9d9;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #e5e5e5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .pola{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .opis{
+        width: 30%;
+        padding-right: 5%;
+    }
+    .slikarad{
+        width: 50%;
+    }
+    .slika{
+        width: 100%;
+    }
+    .gumbi{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        margin: 30px;
+    }
+    .gumb{
+        background-color: black;
+        border: 1px black;
+        color: white;
+        border-radius: 3px;
+        padding: 10px;
+    }
+    .forma{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .red{
+        display: flex;
+        justify-content: center;
+    }
+    .posalji{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .content {
+      padding: 40px 0;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+<body>
+      <div class="container">
+    <header>
+      <div class="logo">MiniTVZ</div>
+      <nav>
+        <a href="pocetna.html">Početna</a>
+        <a href="radionice.html">Radionice</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="zasponzore.html">Za sponzore</a>
+        <a href="prijava.html">Prijava</a>
+      </nav>
+    </header>
+    <div class="container pola">
+        <div class="opis">
+            <h2>Ime radionice</h2>
+            <p>Organizator:------</p>
+            <p>Lokacija:----- </p>
+            <p>Datum i termin odrzavanja:-----</p>
+            <p>
+                Opis: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas beatae id 
+                enim odit voluptatem est voluptas natus odio obcaecati 
+                harum rem totam dolor cum, laudantium fuga laborum sunt ea excepturi.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas beatae id 
+                enim odit voluptatem est voluptas natus odio obcaecati 
+                harum rem totam dolor cum, laudantium fuga laborum sunt ea excepturi.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas beatae id 
+                enim odit voluptatem est voluptas natus odio obcaecati 
+                harum rem totam dolor cum, laudantium fuga laborum sunt ea excepturi.
+            </p>
+        </div>
+        <div class="slikarad">
+            <img src="images/slika.jpg" alt="slika" class="slika">
+        </div>
+    </div>
+    <div class="container gumbi">
+        <button class="gumb">Prijavi me</button>
+        <button class="gumb">Prijavi dijete</button>
+        <button class="gumb">Prijavi učenika</button>
+    </div>
+
+    <div class="container">
+        <h4 class="red">Kontaktiraj organizatora</h4>
+        <div class="container forma">
+            <form action="">
+                <label for="ime">Ime:</label><br>
+                <input type="text" size="58" name="ime" id="ime" placeholder="Jane" required><br>
+                <label for="prezime">Prezime:</label><br>
+                <input type="text" size="58" name="prezime" id="prezime" placeholder="Doe" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" size="58" name="email" id="email" placeholder="example@example.com" required><br>
+                <label for="poruka">Poruka:</label><br>
+                <textarea name="poruka" id="poruka" cols="55" rows="10" required></textarea><br>
+                <button class="gumb posalji">Pošalji</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+      Kontakt: xxx–xxx–xxx &nbsp;&nbsp;|&nbsp;&nbsp; Copyright MiniTVZ 2025
+    </footer>
+  </div>
+</body>
+</html>
