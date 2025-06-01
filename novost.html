@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniTVZ - Novosti</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d9d9d9;
+        }
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #e5e5e5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 40px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        main {
+
+        }
+        .vijest h1{
+            text-align: center;
+            background-color: black;
+            color: white;
+            display: block;
+            font-weight: bold;
+            padding: 10px 0px;
+        }
+        .vijest img{
+            width: 100%;
+        }
+        .vijest p{
+            width: 100%;
+            text-align: center;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            height: 200px;
+        }
+        .komentaribox{
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .komentar{
+            width: 80%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .userinfo{
+            display: flex;
+            align-items: center;
+        }
+        .userinfo img{
+            width: 40px;
+            height: 40px;
+            display: block;
+            border: black 1px solid;
+            border-radius: 100%;
+        }
+        .userinfo h4{
+            padding-left: 10px;
+        }
+
+
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">MiniTVZ</div>
+            <nav>
+                <ul>
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="#">Radionice</a></li>
+                    <li><a href="novosti.html">Novosti</a></li>
+                    <li><a href="zasponzore.html">Za sponzore</a></li>
+                    <li><a href="kreiranje.html">Prijava</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="vijest">
+                <h1>Vijest 1</h1>
+                <img src="images/radionica1.png" alt="radionica 1">
+                <p>Opis radionice koji će zadržati čitatelje i poticati čitatelje da nastave čitati i na kraju odluće prijaviti svoju dijecu na neku od naših radionica.</p>
+            </div>
+            <div class="komentari">
+                <h3>Komentari</h3>
+                <div class="komentaribox">
+                    <div class="komentar">
+                        <div class="userinfo">
+                            <img src="images/user.png" alt="userprofile">
+                            <h4>Korisnik 1</h4>
+                        </div>
+                        <div class="commet">
+                            <p>Ovo je odličan članak o radionici, vrlo informativno i zanimljivo.</p>
+                        </div>
+                    </div>
+                    <div class="komentar">
+                        <div class="userinfo">
+                            <img src="images/user.png" alt="userprofile">
+                            <h4>Korisnik 2</h4>
+                        </div>
+                        <div class="commet">
+                            <p>Slažem se no vjerujem kako bi u budućnosti mogli više pisati o detaljima individualnih događaja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Kontakt: xxx–xxx–xxx &nbsp;&nbsp;|&nbsp;&nbsp; Copyright MiniTVZ 2025
+        </footer>
+    </div>
+</body>
+</html>
