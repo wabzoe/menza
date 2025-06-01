@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniTVZ - Sponzori</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d9d9d9;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #e5e5e5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .hero {
+      position: relative;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+    .overlay-text {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 0;
+    }
+    .button {
+      background-color: black;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+    .popup-content {
+      background: white;
+      padding: 40px;
+      text-align: center;
+      position: relative;
+      max-width: 500px;
+      width: 90%;
+    }
+    .popup-content h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .popup-content p {
+      margin-bottom: 20px;
+    }
+    .popup-content .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .download-btn {
+      background-color: black;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MiniTVZ</div>
+      <nav>
+        <a href="pocetna.html">Početna</a>
+        <a href="#">Radionice</a>
+        <a href="#">Za roditelje</a>
+        <a href="#">Za sponzore</a>
+        <a href="#">Prijava</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="ggg.webp" alt="Image2">
+      <div class="overlay-text">Postanite partner budućnosti obrazovanja!</div>
+    </section>
+
+    <div class="content">
+      <h2>Vaš utjecaj u brojkama</h2>
+      <p>Detalji o MiniTVZ-u. Što je naš cilj? Jeste li sponzor, roditelj ili dijete? Odaberite radionicu najprikladniju za vaše dijete. Klikom na gumb “radionice” možete saznati još detalja. Preuzmite našu online brošuru ako ste zainteresirani biti sponzor MiniTVZ-a.</p>
+      <button class="button" onclick="openPopup()">Preuzmi brošuru</button>
+    </div>
+
+    <footer>
+      Kontakt: xxx–xxx–xxx &nbsp;&nbsp;|&nbsp;&nbsp; Copyright MiniTVZ 2025
+    </footer>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Brošura za sponzore</h2>
+      <p>Preuzmite PDF brošuru s informacijama o suradnji i mogućnostima ulaganja.</p>
+      <div style="font-size: 48px; margin-bottom: 20px;">⬇️</div>
+      <button class="download-btn">DOWNLOAD</button>
+    </div>
+  </div>
+
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
+
