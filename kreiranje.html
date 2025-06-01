@@ -11,10 +11,46 @@
             max-width: 700px;
             margin: 0 auto;
         }
+            header {
+      background-color: #e5e5e5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+     .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+        nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    } footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+      bottom: 0px;}
     </style>
 
     </head>
     <body align="center">
+        <header>
+      <div class="logo">MiniTVZ</div>
+      <nav>
+        <a href="#">Početna</a>
+        <a href="#">Radionice</a>
+        <a href="#">Za roditelje</a>
+        <a href="zasponzore.html">Za sponzore</a>
+        <a href="#">Već imam račun</a>
+      </nav>
+    </header>
         <!-- Korisnik ima opciju kreiranja računa-->
          <h1>Kreiraj korisnički račun</h1>
         <form method="POST">
@@ -38,7 +74,9 @@
                 radionice, pregledavati povijest radionica, davati recenzije i druge mnoge mogučnosti.
             </p>
         </section>
-
+    <footer>
+      Kontakt: xxx–xxx–xxx &nbsp;&nbsp;|&nbsp;&nbsp; Copyright MiniTVZ 2025
+    </footer>
 
     </body>
 </html>
