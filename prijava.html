@@ -4,6 +4,16 @@
          <meta charset="UTF-8">
          <title>Prijava</title>
     <style>
+       .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+       body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d9d9d9;
+    }
         button
         {
             margin: 10px;
@@ -14,10 +24,16 @@
         }
             header {
       background-color: #e5e5e5;
+      max-width: 1200px;
+      min-width: 1200px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px 40px;
+       position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+        top: 0px
     }
      .logo {
       font-size: 24px;
@@ -38,6 +54,19 @@
         left: 50%;
         transform: translate(-50%);
       bottom: 0px;}
+      button {
+      background-color: black;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    h1{
+      margin-top: 80px;
+    }
     </style>
 
     </head>
@@ -53,7 +82,8 @@
         
       </nav>
     </header>
-        <!-- Korisnik ima opciju kreiranja računa-->
+        <!-- Korisnik ima opciju prijave računa-->
+         <div class="container"></div>
          <h1>Prijava u korisnički račun</h1>
         <form method="POST">
             <label for="Email">Email:</label><br>
@@ -73,6 +103,6 @@
     <footer>
       Kontakt: xxx–xxx–xxx &nbsp;&nbsp;|&nbsp;&nbsp; Copyright MiniTVZ 2025
     </footer>
-
+  </div>
     </body>
 </html>
